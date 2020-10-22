@@ -1,31 +1,38 @@
+* {
+    box-sizing: border-box;
+    
+}
+
 body {
     font-size: 16px;
-    margin: 15px;
-    font-family: 'Oxygen', sans-serif;
-    border: 2px solid black;
-    height: auto;
-  }
-  .heading h1 {
-   text-align: center; 
-   font-weight: bold;
-   color: black;
-  }
-  
-  /** HEADER **/
-  #header-nav {
-    background-color: grey;
+    background-color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+    
+}
+#header-nav {
+    background-color:grey;
     border-radius: 0;
     border: 0;
-    border-bottom: 2px solid black;
+    margin-bottom: 0;
+   padding-bottom: 5px;
+    
   }
-  
-  .navbar-brand {
-    padding-top: 25px;
-  }
-  
-  .navbar-brand h1 { /*  name */
-    font-family: 'Lora', serif;
-    color: black;
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-brand {
+    padding-top: 15px;
+    
+    
+}
+.text-center {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.navbar-brand h1 {
+    color: #000000;
     font-size: 1.5em;
     text-transform: uppercase;
     font-weight: bold;
@@ -33,133 +40,88 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     line-height: .75;
-  }
-  .navbar-brand a:hover, .navbar-brand a:focus {
-    text-decoration: none;
-  }
-  .jumbotron {
-    border: 2px solid grey;
-    background-color: grey;
-  }
-  .jumbotron h2 {
-    text-align: center;
-    color: black;
-    font-size: 1.5em;
-  }
-
-  /********** Large devices only **********/
-@media (min-width: 1200px) {
-  .container .jumbotron {
     
-    height: 675px;
-  }
-}
-
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-  /* Header */
-  #logo-img {
-   
-    width: 100px;
-    height: 100px;
-    margin: 5px 5px 5px 0;
-  }
-  /* End Header */
-
-  /* Home Page */
-  .container .jumbotron {
-   
-    height: 558px;
-  }
-  /* End Home Page */
-}
-
-/********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-  /* Home Page */
-  .container .jumbotron {
-   
-    height: 432px;
-  }
-  /* End Home Page */
-
-}
-
-/********** Extra small devices only **********/
-@media (max-width: 767px) {
-  /* Header */
-  .navbar-brand {
-    padding-top: 10px;
-    height: 80px;
-  }
-  .navbar-brand h1 { /* name */
-    padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
-  }
-  .navbar-brand p { /* Kosher cert */
-    font-size: .6em;
-    margin-top: 12px;
-  }
- 
- 
- 
-
-  #collapsable-nav a { /* Collapsed nav menu text */
-    font-size: 1.2em;
-  }
-  #collapsable-nav a span { /* Collapsed nav menu glyph */
-    font-size: 1em;
-    margin-right: 5px;
   }
 
-  #call-btn > a {
-    font-size: 1.5em;
-    display: block;
-    margin: 0 20px;
-    padding: 10px;
-    border: 2px solid #fff;
-    background-color: #f6b319;
-    color: #951c49;
-  }
-  #xs-deliver {
-    margin-top: 5px;
-    font-size: .7em;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-  }
-  /* End Header */
-
-  /* Home Page */
-  .container .jumbotron {
-    margin-top: 30px;
-    padding: 0;
-  }
-
-}
-.navbar-brand {
-  padding-top: 25px;
-}
 
 #nav-list {
-  margin-top: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 0px;
+    color: white;
+    border: 1px solid black;
 }
-#nav-list a {
-  color: black;
-  text-align: center;
-  font-weight: bold;
-}
-#nav-list a:hover {
-  background: #E7E7E7;
-}
-#nav-list a span {
-  font-size: 1.8em;
+#nav-list li {
+    border: 1px solid black;
+    margin: 0;
 }
 
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #0a0a0a;
+#nav-list a:hover {
+    background-color:white;
+    text-decoration: none;
 }
-.navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
+
+#nav-list a {
+    color: black;
 }
-/* END HEADER */
+
+h2 {
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+#chicken{
+    background-color:grey;
+    color: black;
+    padding: 10px;
+}
+
+#beef {
+    background-color: grey;
+    color: black;
+    padding: 10px;
+}
+
+#sushi {
+    background-color: grey;
+    color: black;
+    padding: 10px;
+}
+
+.food {
+    border: solid 1px white;
+    margin-bottom: 15px;
+
+}
+
+.container {
+    width: 100%;
+   
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+#content-title {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+h3 {
+    margin-top: 5px;
+}
+/* added CSS*/
+#top a {
+    color: lawngreen;
+
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    
+    border: 0px solid black;
+}
+/* end of added */
+  
